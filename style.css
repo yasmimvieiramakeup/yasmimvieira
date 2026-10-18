@@ -88,7 +88,7 @@ p { text-wrap: pretty; }
 .galeria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 1.5rem; }
 .trabalho-destaque { margin-top: 2.5rem; }
 .foto-ampliar { display: block; position: relative; overflow: hidden; border-radius: 3px; }
-.foto-ampliar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 42%; transition: transform .4s; }
+.foto-ampliar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: var(--enquadramento, center 42%); transition: transform .4s; }
 .foto-ampliar:hover img { transform: scale(1.025); }
 .ampliar-icone { position: absolute; right: .8rem; bottom: .8rem; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; color: var(--preto); background: var(--creme); }
 .trabalho figcaption { padding-block: 1.1rem; }
