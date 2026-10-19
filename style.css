@@ -87,6 +87,9 @@ p { text-wrap: pretty; }
 .secao-clara .secao-cabecalho > p { color: var(--texto-escuro); }
 .galeria { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 1.5rem; }
 .trabalho-destaque { margin-top: 2.5rem; }
+.galeria-cinco { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.galeria-cinco > .trabalho { grid-column: span 2; }
+.galeria-cinco > .trabalho:nth-child(4) { grid-column: 2 / span 2; }
 .foto-ampliar { display: block; position: relative; overflow: hidden; border-radius: 3px; }
 .foto-ampliar img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: var(--enquadramento, center 42%); transition: transform .4s; }
 .foto-ampliar:hover img { transform: scale(1.025); }
@@ -259,6 +262,7 @@ p { text-wrap: pretty; }
   .etiqueta { font-size: .65rem; letter-spacing: .12em; }
   .secao, .portfolio { padding-block: 3.5rem; }
   .galeria { grid-template-columns: 1fr; gap: 1.5rem; }
+  .galeria-cinco > .trabalho, .galeria-cinco > .trabalho:nth-child(4) { grid-column: auto; }
   .trabalho-destaque { margin-top: 0; }
   .trabalho h3 { font-size: 1.2rem; }
   .trabalho figcaption { padding-bottom: 0; }
