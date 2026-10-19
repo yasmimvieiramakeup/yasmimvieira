@@ -74,7 +74,7 @@ p { text-wrap: pretty; }
 .topo-nota > span { color: var(--dourado); }
 .topo-foto { position: relative; margin: 0; padding: 0 .7rem; }
 .topo-foto::before { content: ""; position: absolute; inset: -.8rem -.15rem 3rem; z-index: -1; border: 1px solid var(--borda); border-radius: 48% 48% 0 0; }
-.topo-foto > img { width: 100%; height: clamp(400px, 43vw, 550px); object-fit: cover; object-position: center 48%; border-radius: 48% 48% 3px 3px; }
+.topo-foto > img { width: 100%; height: clamp(400px, 43vw, 550px); object-fit: cover; object-position: center 8%; border-radius: 48% 48% 3px 3px; }
 .topo-foto figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding-top: 1rem; color: var(--texto-suave); font-size: .73rem; }
 .foto-assinatura { color: var(--dourado); }
 
@@ -254,7 +254,7 @@ p { text-wrap: pretty; }
   .topo-descricao { max-width: 30rem; font-size: 1rem; }
   .topo .acoes { gap: .8rem 1.3rem; }
   .topo-foto { width: min(100%, 440px); margin-inline: auto; }
-  .topo-foto > img { height: auto; aspect-ratio: 4 / 4.6; object-position: center 50%; }
+  .topo-foto > img { height: auto; aspect-ratio: 4 / 4.6; object-position: center 8%; }
   .topo-foto figcaption { font-size: .7rem; }
   .etiqueta { font-size: .65rem; letter-spacing: .12em; }
   .secao, .portfolio { padding-block: 3.5rem; }
